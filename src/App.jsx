@@ -1,13 +1,14 @@
 import "./App.css";
-import RegisterUser from "./registerUser/RegisterUser";
+import Detailperson from "./views/Dperson";
 import Home from "./views/Home";
-import Login from "./registerUser/Login";
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <main>
-    {/* <RegisterUser /> */}
-    <Login />
-    </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/detail-person" element={<Detailperson />} />
+    </Routes>
   );
 }
 
