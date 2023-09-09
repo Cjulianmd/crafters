@@ -3,6 +3,7 @@ import Filter from "../components/Filter";
 import SearchBar from "../components/SearchBar";
 import Hperfil from "../components/Hperfil";
 import PostCard from "../components/PostCard";
+import AddPost from "../components/AddPost";
 
 const dummyContent =
   "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) ";
@@ -14,12 +15,25 @@ export default function Home() {
         <Hperfil />
       </aside>
       <section className="text-center bg-amber-400 px-8">
+        <AddPost />
+        <PostCard img content={dummyContent} />
+        <PostCard img content={dummyContent} />
+        <PostCard img content={dummyContent} />
+        <PostCard img content={dummyContent} />
+        <PostCard img content={dummyContent} />
         <PostCard img content={dummyContent} />
       </section>
       <aside className="flex flex-col gap-3 pt-5 bg-slate-500 text-center px-8 min-w-[350px]">
         <SearchBar />
         <Filter />
-        <ContactCard />
+        <ContactCard img={"https://randomuser.me/api/portraits/men/62.jpg"} />
+        <ContactCard img={"https://randomuser.me/api/portraits/women/85.jpg"} />
+        <ContactCard img={"https://randomuser.me/api/portraits/women/88.jpg"} />
+        <ContactCard img={"https://randomuser.me/api/portraits/women/61.jpg"} />
+        <ContactCard img={"https://randomuser.me/api/portraits/men/62.jpg"} />
+        <ContactCard img={"https://randomuser.me/api/portraits/men/67.jpg"} />
+        <ContactCard img={"https://randomuser.me/api/portraits/men/69.jpg"} />
+        <ContactCard img={"https://randomuser.me/api/portraits/men/51.jpg"} />
       </aside>
     </main>
   );

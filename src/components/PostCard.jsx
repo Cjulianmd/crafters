@@ -1,5 +1,25 @@
+import { useNavigate } from "react-router";
+
 /* eslint-disable react/prop-types */
 export default function PostCard({ img, content }) {
+  const navigate = useNavigate();
+  //   const [postData, setPostData] = useState();
+
+  //   useEffect(() => {
+  //     const getData = async () => {
+  //       const response = await axios.get(
+  //         "https://8dc5-200-12-183-152.ngrok-free.app"
+  //       );
+  //       setPostData(response);
+  //     };
+  //     getData();
+  //   }, []);
+
+  //console.log(postData);
+
+  const handleClick = () => {
+    navigate("/post");
+  };
   return (
     <section className="flex flex-col gap-3 bg-white p-5 mt-10 rounded-xl">
       <div className="flex">
@@ -21,7 +41,10 @@ export default function PostCard({ img, content }) {
         />
       )}
       <hr />
-      <button className="bg-slate-700 hover:bg-slate-600 p-2 text-white rounded-xl">
+      <button
+        onClick={handleClick}
+        className="bg-slate-700 hover:bg-slate-600 p-2 text-white rounded-xl"
+      >
         Comentar
       </button>
     </section>
