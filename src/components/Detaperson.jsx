@@ -1,9 +1,10 @@
-import React from 'react';
 
-const Sidebar = () => {
-  return (
-    <div className="p-6 object-top h-32 ">
-      <div className="text-center object-top h-32 ">
+const Deperson = () => {
+
+    return(
+    <>
+         <div className=" object-top  ">
+      <div className="text-center object-top ">
         <img
           src="https://th.bing.com/th/id/R.444398d9998cac437c346d62b19cb427?rik=zAonsdr%2bOZLXmg&pid=ImgRaw&r=0"
           alt="Foto de perfil"
@@ -58,7 +59,11 @@ const Sidebar = () => {
         {/* Agrega más detalles del perfil aquí */}
       </div>
     </div>
-  );
+
+    </>
+    );
+
+
 };
 
-export default Sidebar;
+export default Deperson
