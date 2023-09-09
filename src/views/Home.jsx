@@ -9,7 +9,7 @@ const dummyContent =
 
 export default function Home() {
   return (
-    <main className="flex justify-between h-screen">
+    <main className="flex justify-between min-h-full">
       <aside className="bg-slate-500 text-center min-w-[300px]">
         <Hperfil />
       </aside>
