@@ -1,7 +1,13 @@
+import PostCard from "./PostCard";
+
+const dummyContent =
+  "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) ";
+
 const Detailspage = () => {
 
     return(
     <>
+     <PostCard img content={dummyContent} />
     <section className="flex justify-center items-center gap-10 bg-white rounded-md py-3">
       <img
         className="rounded-full w-24 ml-5"

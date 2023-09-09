@@ -2,12 +2,16 @@
 import ContactCard from "../components/ContactCard";
 import Filter from "../components/Filter";
 import SearchBar from "../components/SearchBar";
+import PostCard from "./PostCard";
 
+const dummyContent =
+  "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) ";
 
 const Deperson = () => {
 
     return(
         <>
+        
     <div className="flex justify-between px-8">
          <div className="p-6 object-top  bg-blue-600">
       <div className="text-center object-top px-8">
@@ -75,7 +79,7 @@ const Deperson = () => {
       </aside>
 
 
-    </div></>
+    </div> <PostCard img content={dummyContent} /></>
     );
 
 
